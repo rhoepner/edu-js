@@ -5,7 +5,13 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Start Server",
+            "name": "Lauch KOA Server",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceFolder}/koa_server.js",
+        },
+        {
+            "name": "Launch Simple Server",
             "type": "node",
             "runtimeArgs": [ "-r", "esm"],
             "request": "launch",
