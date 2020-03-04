@@ -5,10 +5,23 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Start Server",
+            "type": "node",
+            "runtimeArgs": [ "-r", "esm"],
+            "request": "launch",
+            "program": "${workspaceFolder}/server.js",
+        },
+        {
+            "name": "Attach",
+            "type": "node",
+            "request": "attach",
+            "port": 9229,
+        },
+        {
+            "name": "Print As Json",
             "type": "node",
             "request": "launch",
-            "name": "Launch Program",
-            "program": "${workspaceFolder}/server.js"
+            "program": "${workspaceFolder}/node_print_as_json.js"
         }
     ]
 }
