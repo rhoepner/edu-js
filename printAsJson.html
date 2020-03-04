@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			function printAsJson() {
+                console.log("Start printAllPropertyNames");
+                let person = {
+                    "firstname": "Reinhard",
+                    "lastname": "Hoepner",
+                    "data_of_birth": "1969-08-21"
+                }
+                document.getElementById("demo").innerHTML = JSON.stringify(person);
+                console.log("End printAllPropertyNames");
+            }
+		</script>
+	</head>
+	<body>
+
+		<h2>JavaScript Hello World Example</h2>
+
+        <button onclick="printAsJson()">Print As JSON</button>
+		<p id="demo">&nbsp;</p>
+
+	</body>
+</html> 
